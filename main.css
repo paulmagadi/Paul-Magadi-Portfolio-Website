@@ -33,7 +33,7 @@ nav .navbar .nav-items .menu {
     }
 
 
-    .display nav .navbar .nav-items .nav-item {
+    .display:nav .navbar .nav-items .nav-item {
         display: block;
     }
 
