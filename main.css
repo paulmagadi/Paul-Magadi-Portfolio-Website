@@ -18,7 +18,7 @@ nav .navbar .nav-items a {
     text-decoration: none;
 }
 
-nav .navbar .nav-items .menu {
+nav .navbar .nav-items .menu-icon {
     display: none;
 }
 
@@ -28,14 +28,19 @@ nav .navbar .nav-items .menu {
         display: none;
     }
 
-    nav .navbar .nav-items .menu {
+    nav .navbar .nav-items .menu-icon {
         display: flex;
     }
 
-
-    .display:nav .navbar .nav-items .nav-item {
+    .navbar a .nav-item{
         display: block;
     }
+
+/* 
+    .show.nav-item{
+        display: block;
+        left: 1me;
+    } */
 
 
 }

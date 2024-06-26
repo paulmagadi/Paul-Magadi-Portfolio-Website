@@ -1,7 +1,7 @@
-const menu = document.getElementsByClassName('menu');
-const menuItem = document.getElementsByClassName('menu-item');
+const menu = document.querySelectorAll('.menu-icon');
+const menuItem = document.querySelectorAll('.nav-item');
 
 
-menu.getEventListener('click', function () {
-    menuItem.classList.add('display')
+menu.addEventListener('click', function () {
+    menuItem.style.display = 'block';
 });
