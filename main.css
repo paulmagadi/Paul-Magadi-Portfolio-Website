@@ -1,16 +1,33 @@
 * {
-    background-color: antiquewhite;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: aliceblue
 }
 
+:root {
+    --bg-color: aliceblue;
+    --text-color: black;
+    --main-color: rgb(134, 5, 255);
+    --white-color: white;
+    --shadow-color:rgba(0, 0, 0, 0.7);
+}
 
 nav .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em 0 1em 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav .navbar .lead {
-    padding-left: 2em;
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: var(--main-color);
 }
 
 nav .navbar .nav-items a {
