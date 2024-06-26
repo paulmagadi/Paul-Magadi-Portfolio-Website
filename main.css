@@ -18,13 +18,24 @@ nav .navbar .nav-items a {
     text-decoration: none;
 }
 
+nav .navbar .nav-items .menu {
+    display: none;
+}
+
 
 @media (max-width: 600px) {
-    nav .navbar {
-        justify-content: center;
-    }
-
-    nav .navbar .nav-items  {
+    nav .navbar .nav-items .nav-item {
         display: none;
     }
+
+    nav .navbar .nav-items .menu {
+        display: flex;
+    }
+
+
+    .display nav .navbar .nav-items .nav-item {
+        display: block;
+    }
+
+
 }
