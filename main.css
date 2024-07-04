@@ -67,21 +67,33 @@ nav .navbar .menu-icon {
     display: flex;
     justify-content: space-between;
     gap: 4em;
+    color: var(--white-color);
 }
 
 .profile-section .profile-statements {
     width: 50%;
+    border: 1px solid black;
 }
 
-.profile-section .profile-image {
+.profile-image-container {
     width: 50%;
-    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 60%;
+    border: 1px solid #000;
+    padding: .5em;
+    border-radius: 50%;
+    background-color: var(--primary2);
 }
 
 .profile-section .profile-image img {
     border-radius: 50%;
-    top: 50%;
-    right: 50%;
+    max-width: 100%; 
+    height: auto;
 }
 
 @media (max-width: 680px) {
