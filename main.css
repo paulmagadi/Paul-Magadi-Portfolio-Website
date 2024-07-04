@@ -33,7 +33,7 @@ nav .navbar {
 }
 
 nav .navbar .lead {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     color: var(--white-color);
 }
 
@@ -90,6 +90,7 @@ nav .navbar .menu-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .profile-image {
@@ -99,12 +100,77 @@ nav .navbar .menu-icon {
     border-radius: 50%;
     background-color: var(--primary2);
     border: 5px solid var(--white-color);
+    transition: Image;
+    animation: floatImage 4s ease-in-out;
 }
+
 
 .profile-section .profile-image img {
     border-radius: 50%;
     max-width: 100%; 
     height: auto;
+    
+}
+
+.profile-image-container:hover {
+    animation: floatImageContainer 4s ease-in-out;
+}
+
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+        background-color: #0cb1a8;
+        width: 60%;
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+        background-color: aqua;
+        width: 61%;
+    }
+
+    100% {
+        transform: translateY(0);
+        background-color: #00bbf0;
+        width: 60%;
+    }
+
+}
+
+
+@keyframes floatImageContainer {
+    0% {
+        transform: scaleX(1.0); 
+        transform: scaleY(1.0);
+        background-color: #057597;
+    }
+
+    25% {
+        transform: scaleX(1.0); 
+        transform: scaleY(1.0);
+        background-color: #0cb1a8;
+    }
+
+
+    50% {
+        transform: scaleX(1.05); 
+        transform: scaleY(1.05);
+        background-color: aqua;
+    }
+
+    75% {
+        transform: scaleX(1.03); 
+        transform: scaleY(1.03);
+        background-color: #0cb1a8;
+    }
+
+    100% {
+        transform: scaleX(1.0);
+        transform: scaleY(1.0);
+        background-color: #036378;
+    }
+
 }
 
 @media (max-width: 680px) {
