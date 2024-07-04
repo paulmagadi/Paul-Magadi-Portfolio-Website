@@ -5,15 +5,16 @@
     border: none;
     outline: none;
     text-decoration: none;
-    background-color: aliceblue
 }
 
 :root {
-    --bg-color: aliceblue;
-    --text-color: black;
-    --main-color: rgb(134, 5, 255);
+    --text-color: #1f1f1f;
+    --black-color: #000000;
     --white-color: white;
     --shadow-color:rgba(0, 0, 0, 0.7);
+    --primary1: #002049;
+    --primary2: #00bbf0;
+    --primary3: #0cb1a8;
 }
 
 nav .navbar {
@@ -22,42 +23,46 @@ nav .navbar {
     align-items: center;
     padding: 1em 0 1em 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
 }
 
 nav .navbar .lead {
     padding-left: 2rem;
     font-size: 3rem;
-    color: var(--main-color);
+    color: var(--white-color);
 }
 
-nav .navbar .nav-items a {
-    padding: 2em;
+nav .navbar a {
+    float: left;
+    display: block;
+    color: var(--white-color);
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-nav .navbar .nav-items .menu-icon {
+
+
+
+
+nav .navbar .menu-icon {
     display: none;
 }
 
-
-@media (max-width: 600px) {
-    nav .navbar .nav-items .nav-item {
-        display: none;
-    }
-
-    nav .navbar .nav-items .menu-icon {
-        display: flex;
-    }
-
-    .navbar a .nav-item{
-        display: block;
-    }
-
-/* 
-    .show.nav-item{
-        display: block;
-        left: 1me;
-    } */
-
-
+.container1 {
+    min-height: 100vh;
+    background-color: var(--primary1)
 }
+
+
+
+.topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+

@@ -1,7 +1,9 @@
-const menu = document.querySelectorAll('.menu-icon');
-const menuItem = document.querySelectorAll('.nav-item');
 
-
-menu.addEventListener('click', function () {
-    menuItem.style.display = 'block';
-});
+function myFunction() {
+  var x = document.getElementById(".navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
