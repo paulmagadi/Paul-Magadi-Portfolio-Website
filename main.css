@@ -27,14 +27,23 @@ nav .navbar {
 }
 
 nav .navbar .lead {
-    padding-left: 2rem;
-    font-size: 3rem;
+    padding-left: 1em;
+    font-size: 2.8rem;
     color: var(--white-color);
 }
 
-nav .navbar a {
+nav .navbar .nav-items-desktop a {
     float: left;
     display: block;
+    color: var(--white-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav .navbar .nav-items-mobile a {
+    display: none;
     color: var(--white-color);
     text-align: center;
     padding: 14px 16px;
