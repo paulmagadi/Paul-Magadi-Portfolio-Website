@@ -98,7 +98,7 @@ nav .navbar .menu-icon {
     padding: .5em;
     border-radius: 50%;
     background-color: var(--primary2);
-    border: 5px solid var(--primary3);
+    border: 5px solid var(--white-color);
 }
 
 .profile-section .profile-image img {
@@ -130,6 +130,9 @@ nav .navbar .menu-icon {
     .profile-section {
         display: flex;
         flex-direction: column;
+        gap: 0;
+        padding: .5em;
+        font-size: .8em;
     }
 
     .profile-image-container {
@@ -144,6 +147,7 @@ nav .navbar .menu-icon {
     .profile-statements {
         width: 100%;
         text-align: center;
+        border: none;
     }
 
     
