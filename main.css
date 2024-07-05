@@ -93,7 +93,6 @@ nav .navbar .menu-icon {
     padding: .8em;
 }
 
-
 .tech-stack h2 {
     color: var(--white-color);
     text-align: center;
@@ -127,6 +126,65 @@ nav .navbar .menu-icon {
 
 .profile-image-container:hover {
     animation: floatImageContainer 4s ease-in-out;
+}
+
+.container2 {
+    padding: 1em;
+}
+
+.services {
+    min-height: 60vh;
+    padding-bottom: 10px;
+}
+
+.services .heading {
+    margin-bottom: 8px;
+}
+
+.services .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 21rem;
+    background: aliceblue;
+    padding: 10px 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.235);
+    text-align: center;
+    border-top: 2px solid var(--primary2);
+    border-bottom: 10px solid var(--primary2);
+    transition: 0.5s ease;
+}
+
+.services-container .services-box:hover {
+    box-shadow: 0px 1px 2px black;
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.services-box i {
+    font-size: 55px;
+    color: var(--primary3);
+}
+
+.services-box h3 {
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+
+.services-box:hover h3 {
+    color: var(--primary3);
+    transition: 0.5s ease;
+}
+
+.services-box p {
+    font-size: 16px;
+    margin: 5px 0px 13px 0px;
 }
 
 @keyframes floatImage {
