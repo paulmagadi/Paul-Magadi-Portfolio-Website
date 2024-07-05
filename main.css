@@ -19,8 +19,8 @@
 
 body, html {
     font-family: Arial, sans-serif;
-    background-color: var(--primary1);
-    color: var(--white-color);
+    /* background-color: var(--primary1); */
+    /* color: var(--white-color); */
 }
 
 nav .navbar {
