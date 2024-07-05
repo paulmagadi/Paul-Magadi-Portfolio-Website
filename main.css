@@ -30,6 +30,7 @@ nav .navbar {
     padding: .5em 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
+    border-bottom: 2px solid var(--white-color);
 }
 
 nav .navbar .lead {
