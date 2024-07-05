@@ -273,7 +273,7 @@ nav .navbar .menu-icon {
         display: flex;
         flex-direction: column;
         gap: 0;
-        padding: .5em;
+        padding: 2em .5em;
         font-size: .8em;
     }
 
