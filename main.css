@@ -133,7 +133,7 @@ nav .navbar .menu-icon {
     border-radius: 50%;
     background-color: var(--primary2);
     border: 5px solid var(--white-color);
-    animation: floatImage 4s ease-in-out;
+    animation: floatImage 12s ease-in-out;
 }
 
 .profile-section .profile-image img {
@@ -143,8 +143,9 @@ nav .navbar .menu-icon {
     
 }
 
-.profile-image-container:hover img{
-    animation: floatImage 4s ease-in-out;
+.profile-image-container:hover img {
+    animation: floatImage 12s ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes floatImage {
@@ -153,9 +154,23 @@ nav .navbar .menu-icon {
         background-color: #0cb1a8;
     }
 
-    50% {
+    20% {
         transform: translateY(-3.5rem);
+        background-color: rgb(255, 255, 0);
+    }
+    40% {
+        transform: translateX(-3.5rem);
         background-color: rgb(255, 0, 0);
+    }
+
+    60% {
+        transform: translateY(3.5rem);
+        background-color: rgb(0, 98, 255);
+    }
+
+    80% {
+        transform: translateX(3.5rem);
+        background-color: rgb(32, 255, 2);
     }
 
     100% {
