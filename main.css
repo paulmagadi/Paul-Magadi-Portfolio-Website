@@ -80,14 +80,14 @@ nav .navbar .menu-icon {
     border-radius: 5px; 
     padding: 1em;
     background:
-      linear-gradient(to right, var(--primary2) 4px, transparent 4px) 0 0,
+      linear-gradient(to right, var(--white-color) 4px, transparent 4px) 0 0,
       linear-gradient(to right, var(--primary2) 4px, transparent 4px) 0 100%,
       linear-gradient(to left, var(--primary2) 4px, transparent 4px) 100% 0,
-      linear-gradient(to left, var(--primary2) 4px, transparent 4px) 100% 100%,
-      linear-gradient(to bottom, var(--primary2) 4px, transparent 4px) 0 0,
-      linear-gradient(to bottom, var(--primary2) 4px, transparent 4px) 100% 0,
-      linear-gradient(to top, var(--primary2) 4px, transparent 4px) 0 100%,
-      linear-gradient(to top, var(--primary2) 4px, transparent 4px) 100% 100%;
+      linear-gradient(to left, var(--white-color) 4px, transparent 4px) 100% 100%,
+      linear-gradient(to bottom, var(--white-color) 4px, transparent 4px) 0 0,
+      linear-gradient(to bottom, var(--primary3) 4px, transparent 4px) 100% 0,
+      linear-gradient(to top, var(--primary3) 4px, transparent 4px) 0 100%,
+      linear-gradient(to top, var(--white-color) 4px, transparent 4px) 100% 100%;
       background-repeat: no-repeat;
     background-size: 1.5em 2em;
     animation: BorderTransition 10s ease-in-out infinite;
