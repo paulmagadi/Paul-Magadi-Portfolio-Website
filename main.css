@@ -27,7 +27,7 @@ nav .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 1em;
+    padding: .5em 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
 }
@@ -67,7 +67,7 @@ nav .navbar .menu-icon {
 }
 
 .profile-section {
-    padding: 3em 1em;
+    padding: 3em 1.5em;
     display: flex;
     justify-content: space-between;
     gap: 1em;
@@ -124,16 +124,84 @@ nav .navbar .menu-icon {
     
 }
 
-.profile-image-container:hover {
+.profile-image-container:hover img{
+    animation: floatImage 4s ease-in-out;
+}
+
+.profile-section .profile-statements:hover {
     animation: floatImageContainer 4s ease-in-out;
 }
 
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+        background-color: #0cb1a8;
+    }
+
+    50% {
+        transform: translateY(-3.5rem);
+        background-color: rgb(255, 0, 0);
+    }
+
+    100% {
+        transform: translateY(0);
+        background-color: #00bbf0;
+    }
+}
+
+
+@keyframes floatImageContainer {
+    0% {
+        transform: scaleX(1.0); 
+        transform: scaleY(1.0);
+        padding: .3em;
+    }
+
+    25% {
+        transform: scaleX(1.0); 
+        transform: scaleY(1.0);
+        padding: .5em;
+
+    }
+
+    50% {
+        transform: scaleX(1.04); 
+        transform: scaleY(1.04);
+        padding: .6em;
+
+    }
+
+    75% {
+        transform: scaleX(1.03); 
+        transform: scaleY(1.03);
+        padding: .5em;
+
+    }
+
+    100% {
+        transform: scaleX(1.0);
+        transform: scaleY(1.0);
+        background-color: #036378;
+        padding: .3em;
+
+    }
+}
+
 .container2 {
-    padding: 1em;
+    min-height: 60vh;
+    background-color: var(--white-color);
+}
+
+
+.container3 {
+    padding: 1.5em;
+    background-color: var(--primary1);
+    min-height: 60vh;
+    color: var(--white-color);
 }
 
 .services {
-    min-height: 60vh;
     padding-bottom: 10px;
 }
 
@@ -151,20 +219,21 @@ nav .navbar .menu-icon {
 
 .services-container .services-box {
     flex: 1 1 21rem;
-    background: aliceblue;
+    /* background: var(--white-color); */
+    /* color: var(--black-color); */
     padding: 10px 5px 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.235);
     text-align: center;
-    border-top: 2px solid var(--primary2);
-    border-bottom: 10px solid var(--primary2);
     transition: 0.5s ease;
+    border-top: 2px solid var(--primary2);
+    border-bottom: 2px solid var(--primary2);
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.235);
 }
 
 .services-container .services-box:hover {
-    box-shadow: 0px 1px 2px black;
     transform: scale(1.04);
     cursor: pointer;
+    border: 2px solid var(--primary2);
 }
 
 .services-box i {
@@ -187,67 +256,6 @@ nav .navbar .menu-icon {
     margin: 5px 0px 13px 0px;
 }
 
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-        background-color: #0cb1a8;
-        width: 60%;
-    }
-
-    50% {
-        transform: translateY(-2.4rem);
-        background-color: rgb(255, 0, 0);
-        width: 60.5%;
-    }
-
-    100% {
-        transform: translateY(0);
-        background-color: #00bbf0;
-        width: 60%;
-    }
-}
-
-
-@keyframes floatImageContainer {
-    0% {
-        transform: scaleX(1.0); 
-        transform: scaleY(1.0);
-        background-color: #057597;
-        padding: .3em;
-    }
-
-    25% {
-        transform: scaleX(1.0); 
-        transform: scaleY(1.0);
-        background-color: #0cb1a8;
-        padding: .5em;
-
-    }
-
-    50% {
-        transform: scaleX(1.04); 
-        transform: scaleY(1.04);
-        background-color: aqua;
-        padding: .6em;
-
-    }
-
-    75% {
-        transform: scaleX(1.03); 
-        transform: scaleY(1.03);
-        background-color: #0cb1a8;
-        padding: .5em;
-
-    }
-
-    100% {
-        transform: scaleX(1.0);
-        transform: scaleY(1.0);
-        background-color: #036378;
-        padding: .3em;
-
-    }
-}
 
 @media (max-width: 680px) {
     nav .navbar .nav-items-desktop {
