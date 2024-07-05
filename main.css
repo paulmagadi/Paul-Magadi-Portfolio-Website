@@ -77,7 +77,9 @@ nav .navbar .menu-icon {
 
 .profile-statements {
     width: 50%;
-    border: 1px solid var(--primary2);
+    border-style: double;
+    border-width: 5px;
+    border-color: var(--primary2);
     border-radius: 5px;
     background-color: var(--primary1);
     padding: 1em;
@@ -85,9 +87,10 @@ nav .navbar .menu-icon {
 
 .tech-stack {
     border-radius: 5px;
-    padding: .5em;
     background-color: var(--primary2);
     color: var(--primary1);
+    border: 2px solid var(--white-color);
+    padding: .8em;
 }
 
 
@@ -105,11 +108,6 @@ nav .navbar .menu-icon {
     border-radius: 5px;
 }
 
-.tech-stack:hover {
-    border: 2px solid var(--white-color);
-    padding: .8em;
-}
-
 .profile-image {
     width: 60%;
     border: 1px solid #000;
@@ -117,10 +115,8 @@ nav .navbar .menu-icon {
     border-radius: 50%;
     background-color: var(--primary2);
     border: 5px solid var(--white-color);
-    transition: Image;
     animation: floatImage 4s ease-in-out;
 }
-
 
 .profile-section .profile-image img {
     border-radius: 50%;
@@ -133,7 +129,6 @@ nav .navbar .menu-icon {
     animation: floatImageContainer 4s ease-in-out;
 }
 
-
 @keyframes floatImage {
     0% {
         transform: translateY(0);
@@ -143,8 +138,8 @@ nav .navbar .menu-icon {
 
     50% {
         transform: translateY(-2.4rem);
-        background-color: aqua;
-        width: 61%;
+        background-color: rgb(255, 0, 0);
+        width: 60.5%;
     }
 
     100% {
@@ -152,7 +147,6 @@ nav .navbar .menu-icon {
         background-color: #00bbf0;
         width: 60%;
     }
-
 }
 
 
@@ -172,10 +166,9 @@ nav .navbar .menu-icon {
 
     }
 
-
     50% {
-        transform: scaleX(1.05); 
-        transform: scaleY(1.05);
+        transform: scaleX(1.04); 
+        transform: scaleY(1.04);
         background-color: aqua;
         padding: .6em;
 
@@ -196,7 +189,6 @@ nav .navbar .menu-icon {
         padding: .3em;
 
     }
-
 }
 
 @media (max-width: 680px) {
@@ -242,7 +234,6 @@ nav .navbar .menu-icon {
         border: none;
     }
 
-    
     .profile-image-container {
         width: 100%;
         margin: 1em;
