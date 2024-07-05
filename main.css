@@ -97,11 +97,6 @@ nav .navbar .menu-icon {
     0% {
         background-size: 50% 50%;
     }
-/* 
-    50% {
-        background-size: 2em 2.5em;
-
-    } */
 
     100% {
         background-size: 1.5em 2em;
@@ -152,11 +147,6 @@ nav .navbar .menu-icon {
     animation: floatImage 4s ease-in-out;
 }
 
-.profile-section .profile-statements:hover {
-    animation: floatImageContainer 4s ease-in-out;
-}
-
-
 @keyframes floatImage {
     0% {
         transform: translateY(0);
@@ -174,22 +164,6 @@ nav .navbar .menu-icon {
     }
 }
 
-
-@keyframes floatImageContainer {
-    0% {
-        background-size: 1.5em 2em;
-    }
-
-    50% {
-        background-size: 2em 2.5em;
-
-    }
-
-    100% {
-        background-size: 1.5em 2em;
-
-    }
-}
 
 .container2 {
     min-height: 60vh;
