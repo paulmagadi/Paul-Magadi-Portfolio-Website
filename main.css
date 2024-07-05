@@ -156,21 +156,21 @@ nav .navbar .menu-icon {
 
     20% {
         transform: translateY(-3.5rem);
-        background-color: rgb(255, 255, 0);
+        background-color: rgb(237, 145, 8);
     }
     40% {
         transform: translateX(-3.5rem);
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(249, 83, 0);
     }
 
     60% {
         transform: translateY(3.5rem);
-        background-color: rgb(0, 98, 255);
+        background-color: rgb(4, 79, 219);
     }
 
     80% {
         transform: translateX(3.5rem);
-        background-color: rgb(32, 255, 2);
+        background-color: rgb(0, 255, 110);
     }
 
     100% {
