@@ -185,6 +185,47 @@ nav .navbar .menu-icon {
     background-color: var(--white-color);
 }
 
+.skills-section {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+.skill-item {
+    width: 32%;
+    background-color: red;
+    padding: .5em;
+}
+
+.web-development {
+
+}
+
+
+
+
+.skill-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 30px;
+  }
+  
+  .skill {
+    text-align: right;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: white;
+    border-radius: 30px;
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+
 
 .container3 {
     padding: 1.5em;
@@ -233,12 +274,12 @@ nav .navbar .menu-icon {
     color: var(--primary3);
 }
 
-.services-box h3 {
-    font-size: 25px;
+.services-box h4 {
+    font-size: 20px;
     transition: 0.5s ease;
 }
 
-.services-box:hover h3 {
+.services-box:hover h4 {
     color: var(--primary3);
     transition: 0.5s ease;
 }
