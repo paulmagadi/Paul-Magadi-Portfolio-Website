@@ -88,17 +88,16 @@ nav .navbar .menu-icon {
       linear-gradient(to top, var(--white-color) 4px, transparent 4px) 100% 100%; 
       background-repeat: no-repeat;
       background-size: 10% 10%;
-    animation: BorderTransition 5s ease-in-out;
+    animation: BorderTransition 3s ease-in-out;
 }
 
 @keyframes BorderTransition {
     0% {
-        background-size: 100% 100%;
+        background-size: 50% 50%;
     }
 
     100% {
         background-size: 10% 10%;
-
     }
 }
 
@@ -131,7 +130,7 @@ nav .navbar .menu-icon {
     border-radius: 50%;
     background-color: var(--primary2);
     border: 5px solid var(--white-color);
-    animation: floatImage 12s ease-in-out;
+    animation: floatImage 6s ease-in-out;
 }
 
 .profile-section .profile-image img {
@@ -142,7 +141,6 @@ nav .navbar .menu-icon {
 }
 
 .profile-image-container:hover img {
-    animation: floatImage 12s ease-in-out;
     cursor: pointer;
 }
 
@@ -152,23 +150,9 @@ nav .navbar .menu-icon {
         background-color: #0cb1a8;
     }
 
-    20% {
+    50% {
         transform: translateY(-3.5rem);
-        background-color: rgb(237, 145, 8);
-    }
-    40% {
-        transform: translateX(-3.5rem);
         background-color: rgb(249, 83, 0);
-    }
-
-    60% {
-        transform: translateY(3.5rem);
-        background-color: rgb(4, 79, 219);
-    }
-
-    80% {
-        transform: translateX(3.5rem);
-        background-color: rgb(0, 255, 110);
     }
 
     100% {
