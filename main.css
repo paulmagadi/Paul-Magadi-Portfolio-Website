@@ -5,6 +5,7 @@
     border: none;
     outline: none;
     text-decoration: none;
+    overflow: auto;
 }
 
 :root {
@@ -19,15 +20,16 @@
 
 body, html {
     font-family: 'Gabriela', Arial, sans-serif; 
+    box-sizing: border-box;
 }
 
 nav .navbar {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5em 1.5em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    overflow: hidden;
 }
 
 nav .navbar .lead {
@@ -62,7 +64,7 @@ nav .navbar .menu-icon {
 
 .container1 {
     min-height: 100vh;
-    background-color: var(--primary1)
+    background-color: var(--primary1);
 }
 
 .profile-section {
@@ -147,13 +149,15 @@ nav .navbar .menu-icon {
     background-color: var(--primary2);
     border: 5px solid var(--white-color);
     animation: floatImage 6s ease-in-out;
+    z-index: 100;
+    
 }
 
 .profile-section .profile-image img {
     border-radius: 50%;
     max-width: 100%; 
     height: auto;
-    
+    z-index: 100;
 }
 
 .profile-image-container:hover img {
@@ -369,8 +373,8 @@ nav .navbar .menu-icon {
         right: 0;
         width: 100%;
         background-color: var(--primary3);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     nav .navbar .lead {
