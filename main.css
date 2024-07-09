@@ -346,24 +346,25 @@ nav .navbar .menu-icon {
     nav .navbar .nav-items-mobile {
         display: flex;
         justify-content: space-between;
-        padding: .8em 1.5em;
+        padding: 1.5em;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         width: 100%;
-        background-color: var(--white-color);
+        background-color: var(--primary3);
         
     }
 
     nav .navbar .lead {
-        padding-top: 1em;
+        padding-top: 1.7em;
     }
 
     nav .navbar .nav-items-mobile a {
         /* padding: .3em; */
         /* font-size: .8rem; */
-        color: var(--primary1);
+        color: var(--white-color);
+        font-family: 'Gabriela', Arial, sans-serif; 
     }
 
     .profile-section {
