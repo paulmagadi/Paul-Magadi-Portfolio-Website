@@ -88,7 +88,7 @@ nav .navbar .menu-icon {
       linear-gradient(to top, var(--white-color) 4px, transparent 4px) 100% 100%; 
       background-repeat: no-repeat;
       background-size: 10% 10%;
-    animation: BorderTransition 10s ease-in-out;
+    animation: BorderTransition 5s ease-in-out;
 }
 
 @keyframes BorderTransition {
