@@ -345,14 +345,25 @@ nav .navbar .menu-icon {
 
     nav .navbar .nav-items-mobile {
         display: flex;
-        justify-content: center;
-        padding: .6em 0;
-        border-top: 2px solid white;
+        justify-content: space-between;
+        padding: .8em 1.5em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        
+    }
+
+    nav .navbar .lead {
+        padding-top: 1em;
     }
 
     nav .navbar .nav-items-mobile a {
-        padding: .3em;
-        font-size: .8rem;
+        /* padding: .3em; */
+        /* font-size: .8rem; */
+        color: var(--primary1);
     }
 
     .profile-section {
