@@ -79,13 +79,13 @@ nav .navbar .menu-icon {
     padding: 1em;
     background:
       linear-gradient(to right, var(--white-color) 4px, transparent 4px) 0 0,
-      linear-gradient(to right, var(--primary2) 4px, transparent 4px) 0 100%,
-      linear-gradient(to left, var(--primary2) 4px, transparent 4px) 100% 0,
+      /* linear-gradient(to right, var(--primary2) 4px, transparent 4px) 0 100%, */
+      /* linear-gradient(to left, var(--primary2) 4px, transparent 4px) 100% 0, */
       linear-gradient(to left, var(--white-color) 4px, transparent 4px) 100% 100%,
       linear-gradient(to bottom, var(--white-color) 4px, transparent 4px) 0 0,
-      linear-gradient(to bottom, var(--primary3) 4px, transparent 4px) 100% 0,
-      linear-gradient(to top, var(--primary3) 4px, transparent 4px) 0 100%,
-      linear-gradient(to top, var(--white-color) 4px, transparent 4px) 100% 100%;
+      /* linear-gradient(to bottom, var(--primary3) 4px, transparent 4px) 100% 0, */
+      /* linear-gradient(to top, var(--primary3) 4px, transparent 4px) 0 100%,*/
+      linear-gradient(to top, var(--white-color) 4px, transparent 4px) 100% 100%; 
       background-repeat: no-repeat;
       background-size: 10% 10%;
     animation: BorderTransition 10s ease-in-out;
@@ -93,7 +93,7 @@ nav .navbar .menu-icon {
 
 @keyframes BorderTransition {
     0% {
-        background-size: 100% 50%;
+        background-size: 100% 100%;
     }
 
     100% {
