@@ -28,8 +28,8 @@
 
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        display: block;
+        width: 100%;
     }
 
     .header {
@@ -50,8 +50,8 @@
     
     .navbar {
         display: none;
-        padding-left: 1em;
         width: 100%;
+        padding: 0;
     }
 
     .navbar.active {
@@ -60,8 +60,15 @@
     }
 
     .navbar a {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        padding-bottom: .2em;
+        padding-left: 1em;
+    }
+
+    .navbar a:not(:last-child) {
+        border-bottom: .5px solid var(--gray-color);
     }
    
     

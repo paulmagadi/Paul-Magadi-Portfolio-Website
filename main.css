@@ -80,7 +80,8 @@ header {
 .navbar a {
     color: var(--white-color);
     padding: 1em;
-    font-weight: 800
+    font-weight: 800;
+    width: 100%;
 }
 
 .resume {
