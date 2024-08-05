@@ -13,6 +13,7 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
+
 navbarLinks.forEach(link => {
   link.addEventListener('click', function() {
     navbar.classList.toggle('active');
