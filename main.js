@@ -23,7 +23,7 @@ menuBtn.addEventListener('click', () => {
     menuBtn.innerHTML = '<p><span class="material-symbols-outlined">close</span></p>';
     
     // Set the border-bottom style of the header
-    header.classList.add('add-border');
+    header.classList.add('border-style');
     
 
   } else {
@@ -31,7 +31,7 @@ menuBtn.addEventListener('click', () => {
     menuBtn.innerHTML = '<p><span class="material-symbols-outlined">menu</span></p>';
 
       // Remove the border-bottom style of the header
-      header.classList.remove('add-border');
+      header.classList.remove('border-style');
 
   }
 });
@@ -49,13 +49,13 @@ navbarLinks.forEach(link => {
       menuBtn.innerHTML = '<p><span class="material-symbols-outlined">close</span></p>';
       
       // Set the border-bottom style of the header
-      header.classList.add('add-border');
+      header.classList.add('border-style');
     } else {
       // Change the inner HTML of the menu button to a menu icon
       menuBtn.innerHTML = '<p><span class="material-symbols-outlined">menu</span></p>';
 
       // Remove the border-bottom style of the header
-      header.classList.remove('add-border');
+      header.classList.remove('border-style');
     }
   });
 });
