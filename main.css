@@ -80,6 +80,8 @@ header .menu-button {
 }
 
 .resume {
+    padding: .5em;
+    border: 1px solid var(--primary-color);
 
 }
 
