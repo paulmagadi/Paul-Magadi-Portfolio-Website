@@ -55,6 +55,11 @@ header {
     border-radius: 10px;
 }
 
+.header {
+    border-bottom: none;
+    border-radius: none;
+}
+
 .logo {
     color: var(--primary-color);
     font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
