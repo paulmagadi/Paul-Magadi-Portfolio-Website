@@ -53,10 +53,6 @@ header {
     border-bottom: 0.5px solid var(--gray-color);
 }
 
-header .menu-button {
-    display: none;
-}
-
 .logo {
     color: var(--primary-color);
     font-size: 2rem;
@@ -67,6 +63,11 @@ header .menu-button {
     color: var(--primary-color);
     font-size: 3rem;
     letter-spacing: 2px;
+}
+
+
+.menu-button {
+    display: none;
 }
 
 .navbar {
