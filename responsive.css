@@ -8,8 +8,8 @@
 }
 
 @media (max-width: 800px) {
-    header {
-        padding: .2em 1em;
+    .logo {
+        padding-left: 1em;
     }
 
     .logo a {
@@ -19,6 +19,7 @@
     .resume {
         display: none;
     }
+
 
     .navbar a {
         padding-left: 0;
@@ -45,16 +46,18 @@
     
     .navbar {
         display: none;
+        padding-left: 1em;
+        width: 100%;
     }
 
     .navbar.active {
         display: block;
-        
-        border-top: .5px solid var(--gray-color);
+        width: 100%;
     }
 
     .navbar a {
         display: block;
+        width: 100%;
     }
    
     

@@ -49,13 +49,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .2em 2em;
+    padding: .2em 0;
     border-bottom: 0.5px solid var(--gray-color);
+    border-radius: 10px;
 }
 
 .logo {
     color: var(--primary-color);
     font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
+    padding-left: 2em;
 }
 
 .logo a {
@@ -66,6 +68,7 @@ header {
 
 .menu-button {
     display: none;
+    padding-right: 1em;
 }
 
 .navbar {
@@ -81,7 +84,7 @@ header {
 .resume {
     padding: .5em;
     border: 1px solid var(--primary-color);
-
+    margin-right: 2em;
 }
 
 .resume a {
