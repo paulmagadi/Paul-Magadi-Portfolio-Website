@@ -43,6 +43,7 @@ a {
 
 a {
     text-decoration: none;
+    font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -79,14 +80,21 @@ header {
 .navbar a {
     color: var(--white-color);
     padding: 1em;
+    font-weight: 800
 }
 
 .resume {
     padding: .5em;
     border: 1px solid var(--primary-color);
     margin-right: 2em;
+    box-shadow: 2px 3px 1px var(--primary-color);
+    
 }
 
 .resume a {
     color: var(--white-color);
+    display: flex;
+    align-items: center;
 }
+
+

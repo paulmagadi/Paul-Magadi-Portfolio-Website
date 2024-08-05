@@ -39,6 +39,10 @@
         width: 100%;
     }
 
+    .logo a {
+        font-size: 1.8rem;
+    }
+
     .menu-button {
         display: flex;
         align-items: flex-end;
@@ -61,6 +65,13 @@
     }
    
     
+}
+
+
+@media (max-width: 500px) {
+    .logo a {
+        font-size: 1.6rem;
+    }
 }
 
 
