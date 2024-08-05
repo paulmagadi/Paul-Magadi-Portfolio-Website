@@ -49,22 +49,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
+    padding: .2em 2em;
     border-bottom: 0.5px solid var(--gray-color);
 }
 
 .logo {
     color: var(--primary-color);
-    font-size: 2rem;
     font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
 }
 
 .logo a {
     color: var(--primary-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
 }
-
 
 .menu-button {
     display: none;

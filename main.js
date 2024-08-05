@@ -1,17 +1,14 @@
+const navbar = document.querySelector('.navbar');
+const menuBtn = document.querySelector('.menu-button');
 
-function myFunction() {
-  var x = document.getElementById(".navbar");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+menuBtn.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+
+  if (navbar.classList.contains('active')){
+    menuBtn.innerHTML = '<p><span class="material-symbols-outlined">close</span></p>';
   }
-}
+  else {
+    menuBtn.innerHTML = '<p><span class="material-symbols-outlined">menu</span></p>';
+  }
+})
 
-
-// btn = document.querySelector('.logo');
-// item = document.querySelector('.menu-button');
-
-// btn.addEventListener('click', function() {
-//   item.innerHTML = '<span class="material-symbols-outlined">close</span>'
-// })

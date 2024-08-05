@@ -17,15 +17,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
-    
+
     .menu-button {
         display: flex;
         align-items: flex-end;
     }
     
     .navbar {
+        display: none;
+    }
+
+    .navbar.active {
         display: block;
+        
+        border-top: .5px solid var(--gray-color);
     }
 
     .navbar a {
