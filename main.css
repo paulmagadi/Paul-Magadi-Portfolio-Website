@@ -19,7 +19,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 body {
@@ -41,3 +40,40 @@ a {
     background-color: var(--black-color);
 }
 
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+header .menu-button {
+    display: none;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--white-color);
+    padding: 1em;
+}
+
+.resume {
+
+}
+
+.resume a {
+    color: var(--white-color);
+}
