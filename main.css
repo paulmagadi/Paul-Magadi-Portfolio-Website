@@ -26,6 +26,7 @@ body {
     font-family: 'Gabriela', Arial, sans-serif; 
     box-sizing: border-box;
     background-color: var(--shadow-color);
+    color: white;
 }
 
 a {
