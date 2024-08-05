@@ -11,6 +11,7 @@
     --primary-color: #ffbd39;
     --text-color: #000000;
     --black-color: #212121;
+    --gray-color: #a5a5a5;
     --white-color: rgb(238, 249, 249);
     --shadow-color:rgba(0, 0, 0, 0.4);
 }
@@ -25,7 +26,7 @@ body {
     font-family: 'Gabriela', Arial, sans-serif; 
     box-sizing: border-box;
     background-color: var(--shadow-color);
-    color: white;
+    color: var(--white-color);
 }
 
 a {
@@ -49,6 +50,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 2em;
+    border-bottom: 0.5px solid var(--gray-color);
 }
 
 header .menu-button {
@@ -58,6 +60,13 @@ header .menu-button {
 .logo {
     color: var(--primary-color);
     font-size: 2rem;
+    font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
+}
+
+.logo a {
+    color: var(--primary-color);
+    font-size: 3rem;
+    letter-spacing: 2px;
 }
 
 .navbar {
