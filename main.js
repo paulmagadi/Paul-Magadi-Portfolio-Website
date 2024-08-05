@@ -10,6 +10,8 @@ const navbarLinks = document.querySelectorAll('.navbar a');
 // Select the header element
 const header = document.querySelector('.header');
 
+
+
 // Add a click event listener to the menu button
 menuBtn.addEventListener('click', () => {
   // Toggle the 'active' class on the navbar
@@ -21,21 +23,19 @@ menuBtn.addEventListener('click', () => {
     menuBtn.innerHTML = '<p><span class="material-symbols-outlined">close</span></p>';
     
     // Set the border-bottom style of the header
-    header.style.borderBottom = '0.5px solid var(--gray-color)';
+    header.classList.add('add-border');
+    
 
-    // Set the border-radius style of the header
-    header.style.borderRadius = '10px';
   } else {
     // Change the inner HTML of the menu button to a menu icon
     menuBtn.innerHTML = '<p><span class="material-symbols-outlined">menu</span></p>';
 
-    // Remove the border-bottom style of the header
-    header.style.borderBottom = 'none';
+      // Remove the border-bottom style of the header
+      header.classList.remove('add-border');
 
-    // Remove the border-radius style of the header
-    header.style.borderRadius = 'none';
   }
 });
+
 
 // Loop over each navbar link and add a click event listener
 navbarLinks.forEach(link => {
@@ -49,19 +49,13 @@ navbarLinks.forEach(link => {
       menuBtn.innerHTML = '<p><span class="material-symbols-outlined">close</span></p>';
       
       // Set the border-bottom style of the header
-      header.style.borderBottom = '0.5px solid var(--gray-color)';
-
-      // Set the border-radius style of the header
-      header.style.borderRadius = '10px';
+      header.classList.add('add-border');
     } else {
       // Change the inner HTML of the menu button to a menu icon
       menuBtn.innerHTML = '<p><span class="material-symbols-outlined">menu</span></p>';
 
       // Remove the border-bottom style of the header
-      header.style.borderBottom = 'none';
-
-      // Remove the border-radius style of the header
-      header.style.borderRadius = 'none';
+      header.classList.remove('add-border');
     }
   });
 });
