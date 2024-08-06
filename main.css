@@ -11,7 +11,7 @@
     --primary-color: #ffbd39;
     --text-color: #000000;
     --black-color: #212121;
-    --gray-color: #a5a5a5;
+    --gray-color: #3f3d3d;
     --white-color: rgb(238, 249, 249);
     --shadow-color:rgba(0, 0, 0, 0.4);
 }
@@ -103,4 +103,45 @@ header {
     align-items: center;
 }
 
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    width: 100%;
+    padding: 4em 0 0 2em;
+}
+
+.profile-statement {
+    width: 60%;
+    border: 0.5px solid var(--gray-color);
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.profile-image {
+    width: 38%;
+    border: 0.5px solid var(--gray-color);
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.profile-image .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border-top-left-radius: 100%;
+    border-top: 10px solid var(--shadow-color);
+    
+}
+
+.profile-image img {
+    width: 70%;
+}
 

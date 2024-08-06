@@ -2,9 +2,24 @@
     --primary-color: #ffbd39;
     --text-color: #000000;
     --black-color: #212121;
-    --gray-color: #a5a5a5;
+    /* --gray-color: #a5a5a5; */
     --white-color: rgb(238, 249, 249);
     --shadow-color:rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 1000px) {
+    .profile {
+        flex-direction: column;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .profile-statement {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -24,6 +39,7 @@
     .navbar a {
         padding-left: 0;
     }
+
 }
 
 @media (max-width: 600px) {
