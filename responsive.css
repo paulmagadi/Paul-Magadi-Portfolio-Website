@@ -59,6 +59,7 @@
         display: none;
         width: 100%;
         padding: 0;
+        background-color: var(--shadow-color);
     }
 
     .navbar.active {
@@ -74,11 +75,14 @@
         padding-left: 1em;
     }
 
+    .navbar a:last-child {
+        border-radius: 10px;
+    }
+
     .navbar a:not(:last-child) {
         border-bottom: .5px solid var(--gray-color);
     }
-   
-    
+
 }
 
 
